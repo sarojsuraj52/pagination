@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Books Album</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container">
+      <!-- Main content -->
+      <div class="main" id="main">
+        <!-- Heading -->
+        <h1>Book Genres</h1>
+        <br />
+        <!-- Genre containers will be appended here -->
+        <div class="genre-container" id="genre-container"></div>
+        <br />
+        <!-- Pagination controls -->
+        <div class="pagination">
+          <!-- Previous page button -->
+          <button id="prev-page" class="nav-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <!-- Display current page number -->
+          <span id="page-counter">Page 1</span>
+          <!-- Next page button -->
+          <button id="next-page" class="nav-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Book cards container -->
+      <div class="book-cards" id="book-cards"></div>
+      <!-- Back button (to return to genre selection) -->
+      <button id="back-button" class="nav-btn back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
