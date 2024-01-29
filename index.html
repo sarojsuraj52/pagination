@@ -18,8 +18,13 @@
     />
   </head>
   <body>
-    <!-- Main container -->
-    <div class="container">
+    <!-- Logo container -->
+  <div class="logo-container" id="logo-container">
+    <img src="logo.png" alt="Logo" class="logo">
+  </div>
+
+  <!-- Main container (initially hidden) -->
+  <div class="container" id="main-container" style="display: none;">
       <!-- Main content -->
       <div class="main" id="main">
         <!-- Heading -->
@@ -49,6 +54,10 @@
         <i class="fa-solid fa-arrow-left"></i>
       </button>
     </div>
+     <!-- Progress bar -->
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
 
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -1,4 +1,18 @@
+setTimeout(function() {
+  $('#logo-container').fadeOut(500);
+  $('#main-container').fadeIn(500);
+}, 2000); // 10 seconds delay
+
 $(document).ready(function () {
+  // Display the progress bar until the page is fully loaded
+  $(window).on('load', function () {
+    $('.progress-bar').animate({ width: '100%' }, 500, function () {
+      // Animation complete, hide progress bar container
+      $('.progress-container').fadeOut(500);
+    });
+  });
+
+  // Your existing JavaScript code
   const genres = [
     "Fiction",
     "Mystery",
