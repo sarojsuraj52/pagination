@@ -1,14 +1,17 @@
 setTimeout(function() {
   $('#logo-container').fadeOut(500);
   $('#main-container').fadeIn(500);
-}, 2000); // 10 seconds delay
+}, 2000); 
 
 $(document).ready(function () {
   // Display the progress bar until the page is fully loaded
   $(window).on('load', function () {
     $('.progress-bar').animate({ width: '100%' }, 500, function () {
       // Animation complete, hide progress bar container
-      $('.progress-container').fadeOut(500);
+      $('.progress-container').fadeOut(500, function() {
+        // Remove the progress bar from the DOM
+        $(this).remove();
+      });
     });
   });
 
